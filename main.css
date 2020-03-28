@@ -1,0 +1,61 @@
+/*
+  header (.header)
+  container (.game-container)
+    button container (.game-buttons)
+      new board button (#btn-new-board .game-btn)
+      current mode button (#btn-mode .game-btn)
+      clear board button (#btn-clear-board .game-btn)
+    board (#board .game-board)
+      rows of squares (.game-board-row)
+        square (.game-board-row-square)
+*/
+
+body {
+  --accent-color-main: #0aac9e;
+  --accent-color-secondary: #ccd7da;
+  --bg-color-main: #2d2d2d;
+  background-color: var(--bg-color-main);
+  color: var(--accent-color-main);
+  text-align: center;
+}
+
+.header {
+  font-size: 5.0rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.game-btn {
+  background-color: var(--accent-color-main);
+  color: var(--accent-color-secondary);
+  border: 5px solid var(--accent-color-main);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+
+.game-btn:hover {
+  background-color: var(--accent-color-secondary);
+  color: var(--bg-color-main);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: var(--accent-color-secondary);
+  border: 5px solid var(--accent-color-main);
+}
+  .game-board-row {
+    display: flex;
+    justify-content: center;
+  }
+
+    .game-board-row-square {
+      background-color: var(--accent-color-secondary);
+    }
