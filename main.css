@@ -1,15 +1,3 @@
-/*
-  header (.header)
-  container (.game-container)
-    button container (.game-buttons)
-      new board button (#btn-new-board .game-btn)
-      current mode button (#btn-mode .game-btn)
-      clear board button (#btn-clear-board .game-btn)
-    board (#board .game-board)
-      rows of squares (.game-board-row)
-        square (.game-board-row-square)
-*/
-
 body {
   --accent-color-main: #0aac9e;
   --accent-color-secondary: #ccd7da;
@@ -21,23 +9,28 @@ body {
 
 .header {
   font-size: 5.0rem;
+  margin: 10px 10px 40px;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
+.game-container {
+  width: 80%;
+  margin: auto;
 }
 
-.game-btn {
-  background-color: var(--accent-color-main);
-  color: var(--accent-color-secondary);
-  border: 5px solid var(--accent-color-main);
-  border-radius: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px;
-  margin: 10px;
+.game-buttons {
+  margin: 20px;
 }
+
+  .game-btn {
+    background-color: var(--accent-color-main);
+    color: var(--accent-color-secondary);
+    border: 5px solid var(--accent-color-main);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+  }
 
 .game-btn:hover {
   background-color: var(--accent-color-secondary);
