@@ -1,5 +1,6 @@
 # Etch-A-Sketch
 From the Odin Project.
+
 Functions as an etch-a-sketch using the mouse as the draw line.
 
 ## Features
